@@ -128,21 +128,32 @@ margin-bottom: 10px;
 
 
 /* content */
+ /* Minimum weith display settings */
 
 .content div{
 	margin: 10px 10px 0;
 	width: calc(100% - 20px);
 	height: 100px;
 	background-color:  rgb(204, 120, 132) ;
+	display: grid;
+	grid-template-columns: repeat(1, [col] auto ) ;
+	grid-template-rows: repeat(3,[row] auto );
+	grid-template-areas:
+	"1"
+	"2"
+	"3";
 }
 
 .index-post-box-1{	
+	grid-area: 1;
 }
 
 .index-post-box-2{
+	grid-area: 2;
 }
 
 .index-post-box-3{
+	grid-area: 3;
 }
 
 .content div h3{
@@ -193,6 +204,20 @@ footer ul li a{
 .index-footer-icons img{
 	width: 100%;
 	margin-bottom: 20px ;
-
-
 }
+
+/* Large Screens */
+@media(min-width: 900px){
+	.content {
+		width: calc(90% - 0px);
+		margin: auto;
+		height: 240px;
+		display: grid;
+		grid-template-columns: repeat(2, [col] auto ) !important;
+		grid-template-rows: repeat(2,[row] auto )!important;
+		grid-template-areas:
+		"1 2"
+		"3" !important;
+		border: 2px solid yellow;
+	}	 
+  }
