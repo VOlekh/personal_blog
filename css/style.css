@@ -248,8 +248,9 @@ footer ul li a{
 		display: block;
 		margin-right: 40px;
 		padding: 0px 20px;
-		margin-top: -10px;
+		margin-top: -60px;
 		font-family: Catamaran;
+		font-size: 20px;
 		font-style: italic;
 		color: white;
 		text-decoration: none;
