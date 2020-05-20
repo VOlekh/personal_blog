@@ -46,6 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 /* my code*/
 
 
@@ -89,6 +91,21 @@ header nav ul li a {
 	font-size: 24px;
 	color: rgb(20, 3, 5);
 }
+
+header nav ul a {
+	font-family: Catamaran;
+	font-size: 20px;
+	display: inline-block;
+	
+
+}
+/* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
+/* Minimum weith display settings */
+a.button24 {
+	display: none;
+}
+
+
 
 /* banner */
 
@@ -137,11 +154,12 @@ margin-bottom: 10px;
 	background-color:  rgb(204, 120, 132) ;
 	display: grid;
 	grid-template-columns: repeat(1, [col] auto ) ;
-	grid-template-rows: repeat(3,[row] auto );
+	grid-template-rows: repeat(4,[row] auto );
 	grid-template-areas:
 	"1"
 	"2"
-	"3";
+	"3"
+	"4";
 }
 
 .index-post-box-1{	
@@ -154,6 +172,10 @@ margin-bottom: 10px;
 
 .index-post-box-3{
 	grid-area: 3;
+}
+
+.index-post-box-4{
+	grid-area: 4;
 }
 
 .content div h3{
@@ -217,7 +239,30 @@ footer ul li a{
 		grid-template-rows: repeat(2,[row] auto )!important;
 		grid-template-areas:
 		"1 2"
-		"3" !important;
-		border: 2px solid yellow;
-	}	 
+		"3 4" !important;
+	}	
+
+	/* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
+	a.button24 {
+		float: right;
+		display: block;
+		margin-right: 40px;
+		padding: 0px 20px;
+		margin-top: -10px;
+		font-family: Catamaran;
+		font-style: italic;
+		color: white;
+		text-decoration: none;
+		padding: .5em 2em;
+		outline: none;
+		border-width: 2px 0;
+		border-style: solid none;
+		border-color: #FDBE33 #000 #D77206;
+		border-radius: 6px;
+		background: linear-gradient(#F3AE0F, #E38916) #E38916;
+		transition: 0.2s;
+	} 
+	a.button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+	a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
   }
