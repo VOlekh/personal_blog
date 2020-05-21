@@ -147,36 +147,31 @@ margin-bottom: 10px;
 /* content */
  /* Minimum weith display settings */
 
-.content div{
+.content{
 	margin: 10px 10px 0;
 	width: calc(100% - 20px);
-	height: 100px;
+	height: 600px;
 	background-color:  rgb(204, 120, 132) ;
 	display: grid;
-	grid-template-columns: repeat(1, [col] auto ) ;
-	grid-template-rows: repeat(4,[row] auto );
-	grid-template-areas:
-	"1"
-	"2"
-	"3"
-	"4";
+	grid-template-columns: repeat(1, [col] auto );
+	grid-template-rows: repeat(1,[row] auto );
+
 }
 
-.index-post-box-1{	
+.about-post-box-1{	
 	grid-area: 1;
 }
 
-.index-post-box-2{
-	grid-area: 2;
+.about-post-box-1 img{	
+    margin: 10px 10px 0;
+	width: calc(100% - 20px);
+	height: auto;
 }
 
-.index-post-box-3{
-	grid-area: 3;
+.about-post-box-1{	
+	grid-area: 1;
 }
 
-.index-post-box-4{
-	grid-area: 4;
-}
 
 .content div h3{
 	font-family: Catamaran;
@@ -233,13 +228,11 @@ footer ul li a{
 	.content {
 		width: calc(90% - 0px);
 		margin: auto;
-		height: 240px;
+		height: 1200px;
 		display: grid;
-		grid-template-columns: repeat(2, [col] auto ) !important;
-		grid-template-rows: repeat(2,[row] auto )!important;
-		grid-template-areas:
-		"1 2"
-		"3 4" !important;
+		grid-template-columns: repeat(1, [col] auto ) !important;
+		grid-template-rows: repeat(1,[row] auto )!important;
+
 	}	
 
 	/* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
@@ -267,3 +260,5 @@ footer ul li a{
 	a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
   }
+
+  /* card*/
