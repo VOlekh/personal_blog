@@ -60,6 +60,7 @@ body {
 }
 
 /* header */
+
 header {
 	background-color: rgb(204, 120, 132);
 	width: 100%;
@@ -96,16 +97,24 @@ header nav ul a {
 	font-family: Catamaran;
 	font-size: 20px;
 	display: inline-block;
-	
-
 }
+
+/*avatar*/
+
+header .header-avatar {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color: teal;
+    border: 1px;
+    margin-left: 10px;
+  }
 /* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
 /* Minimum weith display settings */
 a.button24 {
 	display: none;
 }
-
-
 
 /* banner */
 
@@ -229,6 +238,7 @@ footer ul li a{
 }
 
 /* Large Screens */
+
 @media(min-width: 900px){
 	.content {
 		width: calc(90% - 0px);
@@ -243,6 +253,7 @@ footer ul li a{
 	}	
 
 	/* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
+	
 	a.button24 {
 		float: right;
 		display: block;

@@ -50,7 +50,6 @@ table {
 
 /* my code*/
 
-
 * {
     text-decoration: none;
 }
@@ -60,6 +59,7 @@ body {
 }
 
 /* header */
+
 header {
 	background-color: rgb(204, 120, 132);
 	width: 100%;
@@ -96,16 +96,26 @@ header nav ul a {
 	font-family: Catamaran;
 	font-size: 20px;
 	display: inline-block;
-	
-
 }
+
+/*avatar*/
+
+header .header-avatar {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color: teal;
+    border: 1px;
+    margin-left: 10px;
+}
+
 /* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
 /* Minimum weith display settings */
+
 a.button24 {
 	display: none;
 }
-
-
 
 /* banner */
 
@@ -143,10 +153,8 @@ margin-bottom: 10px;
 	font-style: italic;
 }
 
-
 /* content */
  /* Minimum weith display settings */
-
 
 .content{
 	margin: 10px;
@@ -169,13 +177,10 @@ margin-bottom: 10px;
 	height: auto;
 }
 
-
-
 section p .about-text{
     display: block;
     margin-left: 40px;
 }
-
 
 .content div h3{
 	font-family: Catamaran;
@@ -191,6 +196,7 @@ section p .about-text{
 
 /* Contact form */
 /* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -203,6 +209,7 @@ input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
     color: white;
     padding: 12px 20px;
@@ -224,11 +231,13 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
     background-color: #D77206;
 }
 
 /* Add a background color and some padding around the form */
+
 .container-form {
 
     background-color: #f2f2f2;
@@ -251,11 +260,12 @@ footer ul {
 	padding-left: 20px;
 }
 
+
 footer ul li{
 	display: block;
 	list-style: none;
-
 }
+
 footer ul li a{
 	font-family: Catamaran;
 	font-size: 24px;
@@ -274,6 +284,7 @@ footer ul li a{
 }
 
 /* Large Screens */
+
 @media(min-width: 900px){
 	.content {
 		width: calc(90% - 0px);
@@ -284,12 +295,10 @@ footer ul li a{
 		display: grid;
 		grid-template-columns: repeat(1, [col] auto ) !important;
 		grid-template-rows: repeat(1,[row] auto )!important;
-
 	}	
 
-
-
 	/* button from http://shpargalkablog.ru/2012/04/css-knopki.html */
+
 	a.button24 {
 		float: right;
 		display: block;
@@ -312,5 +321,4 @@ footer ul li a{
 	} 
 	a.button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 	a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
-
   }
