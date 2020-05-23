@@ -241,8 +241,8 @@ footer ul {
 footer ul li{
 	display: block;
 	list-style: none;
-
 }
+
 footer ul li a{
 	font-family: Catamaran;
 	font-size: 24px;
@@ -297,4 +297,4 @@ footer ul li a{
 	a.button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
 	a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
-  }
+}
