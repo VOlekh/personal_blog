@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* Used materials from: https://www.youtube.com/watch?v=kbLfWKGVsMQ*,
+ https://www.w3schools.com/howto/howto_css_contact_form.asp,
+  https://icon-icons.com/ru/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/ */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -224,7 +227,7 @@ input[type=submit] {
     border-style: solid none;
     border-color: #FDBE33 #000 #D77206;
     border-radius: 6px;
-    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    background: linear-gradient(#f3ae0f, #e38916) #e38916;
     transition: 0.2s;  
 }
 
