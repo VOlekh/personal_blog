@@ -5,16 +5,14 @@
     <title>I am a web developer</title>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
-      name="viewport"
-    />
+      name="viewport"/>
     <link rel="stylesheet" href="css/about_style.css">
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class = "container">
-        <header>
-          
+    <div class= "container">
+        <header class="header">
           <a href="index.html" class="header-logo"> Valentina Olekhnovich</a>
           <nav>
             <ul>
@@ -23,31 +21,30 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <a href="index.html"> <img class="header-avatar" src="img/myAvatar.png" alt="Valentina Olekhnovich avatar"> </a>
-            <a href="#" class="button24">Subscribe</a>
-            
+            <button class="button24" type="button">Subscribe</button>
           </nav>
         </header>
         
         <main>
-          <section class="index-banner">
+          <div class="index-banner">
             <div class="index-banner-text">
-              <h2> <br> <br>I AM <br> A WEB DEVELOPER</h2>
-              <h1>Beginning an exciting journy of web dewelopment, with 10 years expirience in IT.</h1>
+              <h2 class="index-h2-text"> <br> <br>I AM <br> A WEB DEVELOPER</h2>
+              <h1 class="index-h1-text">Beginning an exciting journy of web dewelopment, with 10 years expirience in IT.</h1>
             </div>
-          </section>
-
+          </div>
+      
           <section class="content">
               <div class="about-post-box-1">
-                    <h3>About me</h3>
+                  <h3>About me</h3>
 
-                    <figure class="box-header">
-                      <a href="">
-                        <img src="img/about_ph.jpg" alt="Valentina Olekhnovich photo">
-                      </a>
-                      <figcaption>25th may 2020</figcaption>
-                    </figure>
-                    
-                    <div class="box-content">
+                  <figure class="box-header">
+                  <a href="">
+                      <img src="img/about_ph.jpg" alt="Valentina Olekhnovich photo">
+                  </a>
+                  <figcaption>25th may 2020</figcaption>
+                  </figure>
+                  
+                  <div class="box-content">
                       <h4> Aliquam in quam erat. Etiam eleifend, turpis tristique pulvinar tempus, lectus felis tincidunt metus, id tincidunt metus lorem sed quam.</h4>
                       <section class="about-box-text">
                           <p class= "about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et iaculis purus, vel fringilla tellus. Curabitur condimentum diam ut nisl sollicitudin, non facilisis enim euismod. Sed in vestibulum eros. Cras convallis mi eget sollicitudin faucibus. Morbi porta pretium enim eget faucibus. Vestibulum scelerisque risus in luctus ullamcorper. Duis a sapien sit amet neque cursus tincidunt. Integer ut sodales dolor. Proin efficitur orci nisi, eu viverra orci auctor vitae. Aenean dictum, est non sollicitudin hendrerit, ligula purus venenatis dolor, sit amet egestas massa velit sed risus. Cras feugiat tempor velit, eget hendrerit dolor feugiat at. Ut eu fringilla neque, suscipit tincidunt leo. Aenean nec quam enim. 
@@ -64,38 +61,46 @@
                           <p> Sed et pellentesque justo. Ut vitae turpis mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum sapien libero, eget lacinia turpis consectetur nec. Mauris dui tortor, efficitur at imperdiet condimentum, pharetra at diam. Maecenas ut ultricies dui, eu elementum ante. Donec id rhoncus massa. Fusce iaculis tincidunt metus. 
                           </p>
                           <br>Class aptent taciti sociosqu, <br>Valentina Olekhnovich.
-                        </section>     
-                    </div>     
-                </div>
-           </section>
+                      </section>     
+                  </div>     
+              </div>
+          </section>
         </main>
 
         <footer>
 
-          <ul class="index-footer-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+          <div class="wrapper-footer">
 
-          <div class="index-footer-icons">
-              <a href="https://github.com/VOlekh">
-                <img src="icon/gh.png" alt="Git hab icon">
-              </a>
+            <div class = "wrapper-footer-menu">
 
-              <a href="https://www.facebook.com/valentina.olekhnovich/">
-                <img src="icon/fb.png" alt="Facebook icon">
-              </a>
+                <div class="footer-box"><a href="index.html">Home</a></div>
+                <div class="footer-box"><a href="about.html">About me</a></div>
+                <div class="footer-box"><a href="portfolio.html">Portfolio</a></div>
+                <div class="footer-box"><a href="notes.html">Notes</a></div>
+                <div class="footer-box"><a href="contact.html">Contact</a></div>
+              
+            </div>
 
-              <a href="https://www.linkedin.com/in/valentina-olekhnovich-8b7483108/">
-                <img src="icon/li.png" alt="Linked in icon">
-              </a>
-           </div>
+            
+            <div class="wrapper-footer-icons">
 
+                <div class="footer-icons-box"><a href="https://github.com/VOlekh">
+                  <img src="icon/gh.png" alt="Git hab icon">
+                </a></div>
+
+                <div class="footer-icons-box"><a href="https://www.facebook.com/valentina.olekhnovich/">
+                  <img src="icon/fb.png" alt="Facebook icon">
+                </a></div>
+
+                <div class="footer-icons-box"><a href="https://www.linkedin.com/in/valentina-olekhnovich-8b7483108/">
+                  <img src="icon/li.png" alt="Linked in icon">
+                </a></div>
+            
+            </div>
+
+          </div> 
+          <p><br>Copyright Valentina Olekhnovich® 2020</p>
         </footer>
     </div>
-
   </body>
 </html>

@@ -1,63 +1,65 @@
 /* content */
- /* Minimum weith display settings */
-section{
-    height: 440px;
+/* Minimum weith display settings */
+
+section {
+  height: 440px;
 }
 
-section div{
-    margin: 10px 10px 0;
-	width: calc(100% - 20px);
-	height: 100px;
-	background-color:  rgb(204, 120, 132);
-	display: grid;
-	grid-template-columns: repeat(1, [col] auto);
-	grid-template-rows: repeat(4,[row] auto);
-	grid-template-areas:
-	"1"
-	"2"
-	"3"
-	"4";
+section div {
+  margin: 10px 10px 0;
+  width: calc(100% - 20px);
+  height: 100px;
+  background-color: rgb(204, 120, 132);
+  display: grid;
+  grid-template-columns: repeat(1, [col] auto);
+  grid-template-rows: repeat(4, [row] auto);
+  grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4";
 }
 
-section div h3{
-	font-family: Catamaran;
-	font-size: 24px;
-	color: rgb(20, 3, 5);
-	text-align: center;
-	font-weight: 400;
-	line-height: 100px;
-	text-transform: uppercase;
-	display: block;
-	text-align: center;
+section div h3 {
+  font-family: Catamaran;
+  font-size: 24px;
+  color: rgb(20, 3, 5);
+  text-align: center;
+  font-weight: 400;
+  line-height: 100px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
-.index-post-box-1{	
-	grid-area: 1;
+.index-post-box-1 {
+  grid-area: 1;
 }
 
-.index-post-box-2{
-	grid-area: 2;
+.index-post-box-2 {
+  grid-area: 2;
 }
 
-.index-post-box-3{
-	grid-area: 3;
+.index-post-box-3 {
+  grid-area: 3;
 }
 
-.index-post-box-4{
-	grid-area: 4;
+.index-post-box-4 {
+  grid-area: 4;
 }
 
 /* large screens */
-@media(min-width: 900px){
-	.content {
-		width: calc(90% - 0px);
-		margin: auto;
-		height: 245px;
-		display: grid;
-		grid-template-columns: repeat(2, [col] auto ) !important;
-		grid-template-rows: repeat(2,[row] auto )!important;
-		grid-template-areas:
-		"1 2"
-		"3 4" !important;
-	}	
+
+@media (min-width: 900px) {
+  .content {
+    width: calc(90% - 0px);
+    margin: auto;
+    height: 245px;
+    display: grid;
+    grid-template-columns: repeat(2, [col] auto) !important;
+    grid-template-rows: repeat(2, [row] auto) !important;
+    grid-template-areas:
+      "1 2"
+      "3 4" !important;
+  }
 }
